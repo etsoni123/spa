@@ -1,98 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Hôtel Believe</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Stock - Hôpital Masiki</title>
     <style>
+        /* Styles généraux */
         body {
             font-family: Arial, sans-serif;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: white;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #0077b6;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: #fff;
             padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            font-size: 2rem;
+        .section-title {
+            font-size: 1.8rem;
             margin-bottom: 1rem;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0.25rem;
-        }
-
-        nav ul li a {
-            display: block;
-            padding: 0.5rem 0.75rem;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 0.25rem;
-            transition: background-color 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        nav ul li a:hover {
-            background-color: #555;
-        }
-
-        .book-button {
+            color: #0077b6;
+            border-bottom: 2px solid #0077b6;
             display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 0.25rem;
-            transition: background-color 0.3s ease;
-            margin: 1rem;
-            font-size: 0.9rem;
         }
 
-        .book-button:hover {
-            background-color: #0056b3;
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #0077b6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #005f87;
         }
 
         footer {
-            background-color: #dc3545;
-            color: white;
             text-align: center;
-            padding: 0.5rem;
-            position: static;
-            margin-top: 1rem;
-            font-size: 0.8rem;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <P> bonjour, bienvenue sur notre page</p>
+    <header>
+        <h1>Gestion de Stock - Hôpital Masiki</h1>
+        <p>Une solution innovante pour éviter la péremption et gérer les alertes de stock.</p>
+    </header>
+
     <div class="container">
-        <h1>Bienvenue à l'Hôtel Believe - L'expérience hôtelière ultime !</h1>
-        <p>Avec plus d'un siècle d'histoire, un service personnalisé et des chambres de rêve, l'Hôtel Believe est l'endroit parfait pour un séjour inoubliable. Des processus d'administration transparents et une réservation en ligne simple garantissent une expérience sans accroc. Réservez maintenant et laissez-vous charmer par l'hospitalité exceptionnelle de l'Hôtel Believe !</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNUo9myhd3t8KRJ_EWnHfFZe3pV5Oq5Keh-kmItmn4ezCveA/viewform?embedded=true"></iframe>Réserver</a>
-    
+        <section class="section">
+            <h2 class="section-title">À propos de l'Hôpital Masiki</h2>
+            <p>
+                L'Hôpital Masiki est une institution médicale située en République Démocratique du Congo, 
+                dédiée à fournir des soins de santé de qualité à la communauté locale. Avec une équipe 
+                médicale expérimentée et des installations modernes, l'hôpital joue un rôle clé dans la 
+                région en améliorant le bien-être des patients.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Avantages de la Gestion de Stock</h2>
+            <p>
+                Une bonne gestion de stock des médicaments offre plusieurs avantages :
+            </p>
+            <ul>
+                <li>Éviter la péremption des médicaments, réduisant ainsi les pertes financières.</li>
+                <li>Garantir la disponibilité continue des médicaments essentiels pour les patients.</li>
+                <li>Déclenchement automatique d'alertes en cas de stock faible ou proche de la date de péremption.</li>
+                <li>Optimisation des ressources pour une meilleure gestion logistique.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Objectif de l'Application</h2>
+            <p>
+                Cette application a pour but de faciliter la gestion de stock des médicaments, en offrant 
+                une interface intuitive et des fonctionnalités avancées telles que : le suivi des dates de péremption, 
+                des rapports détaillés, et la gestion des alertes automatiques.
+            </p>
+            <a href="#" class="btn">En savoir plus</a>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Hôtel Believe. Tous droits réservés aux clients. Conçu par ETSONI ODJEDRA Dieudonné</p>
+        <p>&copy; 2024 Hôpital Masiki. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
